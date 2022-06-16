@@ -806,6 +806,7 @@ contract ReferenceOrderCombiner is
         // Perform final checks and execute orders.
         _performFinalChecksAndExecuteOrders(ordersToExecute, executions);
 
-        
+        // Return executions.
+        return executions;
     }
 }
