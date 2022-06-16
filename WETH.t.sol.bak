@@ -35,8 +35,7 @@ contract WETHTest is DSTestPlus {
         assertEq(weth.totalSupply(), 1 ether);
     }
 
-    function testWithdraw() 
-	public {
+    function testWithdraw() public {
         uint256 startingBalance = address(this).balance;
 
         weth.deposit{value: 1 ether}();
